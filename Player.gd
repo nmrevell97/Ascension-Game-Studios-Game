@@ -66,7 +66,7 @@ func kill():
 
 	#TODO As of 4/12/2020: Listed in priority
 	#Organize/Document Code **COMPLETE** 4/12/2020 NR
-	#Version Control through GitHub so I can get Nic on it **DUE DATE: 4/14/2020**
+	#Version Control through GitHub so I can get Nic on it **DUE DATE: 4/14/2020** **STATUS: COMPLETE**
 	#Get Enemy AI working (Bold of me to say, I know)
 		#Basic: Goomba
 		#Advanced: Skeleton Archer (Projectiles!)
