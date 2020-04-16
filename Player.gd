@@ -85,5 +85,5 @@ func kill():
 
 
 func _on_SwordSwing_body_entered(body):
-		if body.get_name() == "Enemy": #If enemy decides to die
+		if body.get_name() == "Enemy" or body.get_name() == "Enemy2": #If enemy decides to die
 			body.queue_free()
