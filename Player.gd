@@ -39,6 +39,7 @@ func _physics_process(delta): #Physics process
 	elif Input.is_action_pressed("ui_Attack"): #Attack movement
 		Spriter.play("Attack") #Plays attack movement
 		SwordSwing.disabled = false #Enables attack collison
+		
 		Interact.disabled = true #Disables Interaction Collision
 		motion.x = 0 #Sets motion to 0 when attacking. May need to rework this
 		
@@ -81,3 +82,8 @@ func kill():
 		#UI Mechanics (Player Health, Coins Collected, other stats(Monsters Slain Statistic? - Miniboss Challenge!))
 		#UI Elements: Mainmenu, Pause state
 
+
+
+func _on_SwordSwing_body_entered(body):
+		if body.get_name() == "Enemy": #If enemy decides to die
+			body.queue_free()
