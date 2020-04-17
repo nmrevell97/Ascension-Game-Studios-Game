@@ -67,15 +67,16 @@ height = 12.0
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -9 )
+position = Vector2( 3, -9 )
 frames = SubResource( 13 )
 frame = 9
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -4.75495, -4.40166 )
+position = Vector2( -0.357443, -5.74783 )
 shape = SubResource( 14 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 0.351699, -1.59892 )
 enabled = true
 cast_to = Vector2( 24, 50 )

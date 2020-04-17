@@ -114,7 +114,6 @@ script = ExtResource( 1 )
 pause_mode = 2
 frames = SubResource( 19 )
 animation = "Attack"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -135,6 +134,7 @@ position = Vector2( 20.771, 0 )
 shape = SubResource( 21 )
 
 [node name="Interact" type="Area2D" parent="."]
+visible = false
 
 [node name="Hitbox" parent="Interact" instance=ExtResource( 3 )]
 position = Vector2( 20.771, 0 )
