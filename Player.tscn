@@ -10,39 +10,39 @@ region = Rect2( 100, 74, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
-region = Rect2( 50, 37, 50, 37 )
+region = Rect2( 0, 0, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
-region = Rect2( 100, 37, 50, 37 )
+region = Rect2( 50, 0, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
-region = Rect2( 150, 37, 50, 37 )
+region = Rect2( 100, 0, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
-region = Rect2( 200, 37, 50, 37 )
+region = Rect2( 50, 37, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=6]
 atlas = ExtResource( 2 )
-region = Rect2( 250, 37, 50, 37 )
+region = Rect2( 100, 37, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=7]
 atlas = ExtResource( 2 )
-region = Rect2( 300, 37, 50, 37 )
+region = Rect2( 150, 37, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=8]
 atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 50, 37 )
+region = Rect2( 200, 37, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 2 )
-region = Rect2( 50, 0, 50, 37 )
+region = Rect2( 250, 37, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=10]
 atlas = ExtResource( 2 )
-region = Rect2( 100, 0, 50, 37 )
+region = Rect2( 300, 37, 50, 37 )
 
 [sub_resource type="AtlasTexture" id=11]
 atlas = ExtResource( 2 )
@@ -83,15 +83,15 @@ animations = [ {
 "name": "Jump",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
-"loop": true,
-"name": "Run",
-"speed": 10.0
-}, {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "Run",
+"speed": 10.0
 }, {
 "frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
 "loop": true,
@@ -114,6 +114,7 @@ script = ExtResource( 1 )
 pause_mode = 2
 frames = SubResource( 19 )
 animation = "Attack"
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
