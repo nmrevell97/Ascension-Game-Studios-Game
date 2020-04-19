@@ -73,18 +73,19 @@ func kill():
 	#Organize/Document Code **COMPLETE** 4/12/2020 NR
 	#Version Control through GitHub so I can get Nic on it **DUE DATE: 4/14/2020** **STATUS: COMPLETE**
 	#Player Control Unit
-		#Move form animatedSprite sheet to a blend space for Hit easier implementation of state based movement
+		#Move form animatedSprite sheet to a blend space for Bit easier implementation of state based movement
 		#Bit:
 			#Sprite (Start out in blend space - nice warm up)
 			#Mechanics (will be able to shoot fireballs)
 	#Get Enemy AI working (Bold of me to say, I know)
-		#Basic: Goomba **STATUS: Partially complete as of 4/16/2020 **
+		#Basic: Goomba **STATUS: Partially complete as of 4/16/2020
 		#Advanced: Skeleton Archer (Projectiles!)
-		#Mega-Advanced: Final boss (Move- Charge, pause, and Shoot): State Machines
+		#Mega-Advanced: Final boss
 	#Tilemapping: Autotile prefferable
 	#Level Design
 		#Autotile map design. Gonna need the art first
-		#Checkpoint System: Shouldn't be too hard implement (Each Checkpoint will switch character from Hit => Bit and vice versa)
+		
+		#Checkpoint System: Shouldn't be too hard implement
 		#Interactable Objects: Coins, Chests, People
 		#Go against the grain, Right -> Left (A more than D) 
 	#Core Mechanics
@@ -94,7 +95,7 @@ func kill():
 			#Player Health: Implementation (5 hearts: player)
 			#Enemy Health: Implementation (2 hearts: goomba 3 hearts: projectile enemy 5 hearts: boss)
 			#Interactables
-				#Coins:  AnimatedSpriteSheet, collision bodies, and a signal script Nic
+				#Coins
 				#Chest (Level Completion goal)
 				#People (Interactable Signage, Bit)
 		#UI Elements: Mainmenu, Pause state
