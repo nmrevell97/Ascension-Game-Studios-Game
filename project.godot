@@ -31,6 +31,7 @@ default_bus_layout=""
 
 UserData="*res://addons/github-integration/scripts/user_data.gd"
 IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
+PlayerData="*res://autoload/PlayerData.tscn"
 
 [editor_plugins]
 
