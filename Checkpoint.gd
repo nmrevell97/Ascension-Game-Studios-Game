@@ -15,6 +15,6 @@ func _ready():
 #func _process(delta):
 #	pass
 
-
+#Should create a checpoint system. Maybe?
 func _on_Area2D2_body_entered(body):
  pass
