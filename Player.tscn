@@ -1,109 +1,63 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://Player/adventurer-Sheet.png" type="Texture" id=2]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_7.png" type="Texture" id=2]
 [ext_resource path="res://OverlapBoxes/Hitbox.tscn" type="PackedScene" id=3]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_8.png" type="Texture" id=4]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_5.png" type="Texture" id=5]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_6.png" type="Texture" id=6]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_9.png" type="Texture" id=7]
+[ext_resource path="res://AssetPack/Light/jump/jump3.png" type="Texture" id=8]
+[ext_resource path="res://AssetPack/Light/idle_blink/idle_blink1.png" type="Texture" id=9]
+[ext_resource path="res://AssetPack/Light/idle_blink/idle_blink0.png" type="Texture" id=10]
+[ext_resource path="res://AssetPack/Light/jump/jump0.png" type="Texture" id=11]
+[ext_resource path="res://AssetPack/Light/jump/jump1.png" type="Texture" id=12]
+[ext_resource path="res://AssetPack/Light/jump/jump2.png" type="Texture" id=13]
+[ext_resource path="res://AssetPack/Light/idle_blink/idle_blink2.png" type="Texture" id=14]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_0.png" type="Texture" id=15]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_4.png" type="Texture" id=16]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_1.png" type="Texture" id=17]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_2.png" type="Texture" id=18]
+[ext_resource path="res://AssetPack/Light/attack1/attack1_3.png" type="Texture" id=19]
+[ext_resource path="res://AssetPack/Light/run/run6.png" type="Texture" id=20]
+[ext_resource path="res://AssetPack/Light/run/run8.png" type="Texture" id=21]
+[ext_resource path="res://AssetPack/Light/run/run9.png" type="Texture" id=22]
+[ext_resource path="res://AssetPack/Light/run/run3.png" type="Texture" id=23]
+[ext_resource path="res://AssetPack/Light/run/run0.png" type="Texture" id=24]
+[ext_resource path="res://AssetPack/Light/run/run7.png" type="Texture" id=25]
+[ext_resource path="res://AssetPack/Light/run/run1.png" type="Texture" id=26]
+[ext_resource path="res://AssetPack/Light/run/run2.png" type="Texture" id=27]
+[ext_resource path="res://AssetPack/Light/run/run4.png" type="Texture" id=28]
+[ext_resource path="res://AssetPack/Light/run/run5.png" type="Texture" id=29]
 
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 2 )
-region = Rect2( 100, 74, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 0, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 2 )
-region = Rect2( 50, 0, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 2 )
-region = Rect2( 100, 0, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 2 )
-region = Rect2( 50, 37, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 2 )
-region = Rect2( 100, 37, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 2 )
-region = Rect2( 150, 37, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 2 )
-region = Rect2( 200, 37, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 2 )
-region = Rect2( 250, 37, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 2 )
-region = Rect2( 300, 37, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 222, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 2 )
-region = Rect2( 50, 222, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 2 )
-region = Rect2( 100, 222, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 2 )
-region = Rect2( 150, 222, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 2 )
-region = Rect2( 200, 222, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 2 )
-region = Rect2( 50, 259, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 2 )
-region = Rect2( 100, 259, 50, 37 )
-
-[sub_resource type="AtlasTexture" id=18]
-atlas = ExtResource( 2 )
-region = Rect2( 150, 259, 50, 37 )
-
-[sub_resource type="SpriteFrames" id=19]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ SubResource( 1 ) ],
-"loop": false,
-"name": "Jump",
+"frames": [ ExtResource( 15 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 16 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Attack",
 "speed": 10.0
 }, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"frames": [ ExtResource( 24 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 20 ), ExtResource( 25 ), ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "Run",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 8 ) ],
 "loop": true,
-"name": "Run",
-"speed": 10.0
-}, {
-"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
-"loop": true,
-"name": "Attack",
-"speed": 15.0
+"name": "Jump",
+"speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=20]
+[sub_resource type="CapsuleShape2D" id=2]
 radius = 10.2633
 height = 10.1436
 
-[sub_resource type="CapsuleShape2D" id=21]
+[sub_resource type="CapsuleShape2D" id=3]
 height = 16.8662
 
 [node name="Player" type="KinematicBody2D"]
@@ -112,15 +66,16 @@ script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 pause_mode = 2
-frames = SubResource( 19 )
-animation = "Attack"
-frame = 5
+position = Vector2( -0.157494, 5.35466 )
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 0.270554, 2.84079 )
-shape = SubResource( 20 )
+shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0.823349, 1.85968 )
@@ -132,12 +87,12 @@ zoom = Vector2( 0.35, 0.35 )
 
 [node name="Hitbox" parent="SwordSwing" instance=ExtResource( 3 )]
 position = Vector2( 20.771, 0 )
-shape = SubResource( 21 )
+shape = SubResource( 3 )
 
 [node name="Interact" type="Area2D" parent="."]
 visible = false
 
 [node name="Hitbox" parent="Interact" instance=ExtResource( 3 )]
 position = Vector2( 20.771, 0 )
-shape = SubResource( 21 )
+shape = SubResource( 3 )
 [connection signal="body_entered" from="SwordSwing" to="." method="_on_SwordSwing_body_entered"]
