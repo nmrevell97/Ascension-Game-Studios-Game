@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://AssetPack/Light/attack1/attack1_7.png" type="Texture" id=2]
@@ -29,6 +29,44 @@
 [ext_resource path="res://AssetPack/Light/run/run2.png" type="Texture" id=27]
 [ext_resource path="res://AssetPack/Light/run/run4.png" type="Texture" id=28]
 [ext_resource path="res://AssetPack/Light/run/run5.png" type="Texture" id=29]
+[ext_resource path="res://AssetPack/Dark/transform/transform8.png" type="Texture" id=30]
+[ext_resource path="res://AssetPack/Dark/transform/transform6.png" type="Texture" id=31]
+[ext_resource path="res://AssetPack/Dark/transform/transform11.png" type="Texture" id=32]
+[ext_resource path="res://AssetPack/Dark/transform/transform29.png" type="Texture" id=33]
+[ext_resource path="res://AssetPack/Dark/transform/transform28.png" type="Texture" id=34]
+[ext_resource path="res://AssetPack/Dark/transform/transform30.png" type="Texture" id=35]
+[ext_resource path="res://AssetPack/Dark/transform/transform37.png" type="Texture" id=36]
+[ext_resource path="res://AssetPack/Dark/transform/transform12.png" type="Texture" id=37]
+[ext_resource path="res://AssetPack/Dark/transform/transform10.png" type="Texture" id=38]
+[ext_resource path="res://AssetPack/Dark/transform/transform22.png" type="Texture" id=39]
+[ext_resource path="res://AssetPack/Dark/transform/transform27.png" type="Texture" id=40]
+[ext_resource path="res://AssetPack/Dark/transform/transform33.png" type="Texture" id=41]
+[ext_resource path="res://AssetPack/Dark/transform/transform19.png" type="Texture" id=42]
+[ext_resource path="res://AssetPack/Dark/transform/transform35.png" type="Texture" id=43]
+[ext_resource path="res://AssetPack/Dark/transform/transform36.png" type="Texture" id=44]
+[ext_resource path="res://AssetPack/Dark/transform/transform26.png" type="Texture" id=45]
+[ext_resource path="res://AssetPack/Dark/transform/transform18.png" type="Texture" id=46]
+[ext_resource path="res://AssetPack/Dark/transform/transform16.png" type="Texture" id=47]
+[ext_resource path="res://AssetPack/Dark/transform/transform21.png" type="Texture" id=48]
+[ext_resource path="res://AssetPack/Dark/transform/transform5.png" type="Texture" id=49]
+[ext_resource path="res://AssetPack/Dark/transform/transform7.png" type="Texture" id=50]
+[ext_resource path="res://AssetPack/Dark/transform/transform14.png" type="Texture" id=51]
+[ext_resource path="res://AssetPack/Dark/transform/transform15.png" type="Texture" id=52]
+[ext_resource path="res://AssetPack/Dark/transform/transform17.png" type="Texture" id=53]
+[ext_resource path="res://AssetPack/Dark/transform/transform24.png" type="Texture" id=54]
+[ext_resource path="res://AssetPack/Dark/transform/transform25.png" type="Texture" id=55]
+[ext_resource path="res://AssetPack/Dark/transform/transform20.png" type="Texture" id=56]
+[ext_resource path="res://AssetPack/Dark/transform/transform13.png" type="Texture" id=57]
+[ext_resource path="res://AssetPack/Dark/transform/transform32.png" type="Texture" id=58]
+[ext_resource path="res://AssetPack/Dark/transform/transform34.png" type="Texture" id=59]
+[ext_resource path="res://AssetPack/Dark/transform/transform31.png" type="Texture" id=60]
+[ext_resource path="res://AssetPack/Dark/transform/transform9.png" type="Texture" id=61]
+[ext_resource path="res://AssetPack/Dark/transform/transform23.png" type="Texture" id=62]
+[ext_resource path="res://AssetPack/Dark/transform/transform2.png" type="Texture" id=63]
+[ext_resource path="res://AssetPack/Dark/transform/transform3.png" type="Texture" id=64]
+[ext_resource path="res://AssetPack/Dark/transform/transform4.png" type="Texture" id=65]
+[ext_resource path="res://AssetPack/Dark/transform/transform0.png" type="Texture" id=66]
+[ext_resource path="res://AssetPack/Dark/transform/transform1.png" type="Texture" id=67]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -42,15 +80,20 @@ animations = [ {
 "name": "Run",
 "speed": 20.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 9 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 66 ), ExtResource( 67 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 49 ), ExtResource( 31 ), ExtResource( 50 ), ExtResource( 30 ), ExtResource( 61 ), ExtResource( 38 ), ExtResource( 32 ), ExtResource( 37 ), ExtResource( 57 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 47 ), ExtResource( 53 ), ExtResource( 46 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 48 ), ExtResource( 39 ), ExtResource( 62 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 45 ), ExtResource( 40 ), ExtResource( 34 ), ExtResource( 33 ), ExtResource( 35 ), ExtResource( 60 ), ExtResource( 58 ), ExtResource( 41 ), ExtResource( 59 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "Transform",
+"speed": 20.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -68,9 +111,10 @@ script = ExtResource( 1 )
 pause_mode = 2
 position = Vector2( -0.157494, 5.35466 )
 frames = SubResource( 1 )
-animation = "Idle"
-frame = 1
+animation = "Transform"
+frame = 37
 playing = true
+offset = Vector2( 0, 2.5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -95,4 +139,6 @@ visible = false
 [node name="Hitbox" parent="Interact" instance=ExtResource( 3 )]
 position = Vector2( 20.771, 0 )
 shape = SubResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 [connection signal="body_entered" from="SwordSwing" to="." method="_on_SwordSwing_body_entered"]
