@@ -10,7 +10,7 @@ extends KinematicBody2D
 const UP = Vector2(0, -1)
 const GRAV = 20
 const SPEED = 200
-const J_Height = -550
+const J_Height = -600
 
 var motion = Vector2() #Contains X and Y in single Variable
 onready var Spriter = $AnimatedSprite #Initializes Sprite Animation spree
